@@ -51,6 +51,57 @@
   </div>
 </section>
 
+<!-- GOOGLE MAPS SECTION -->
+<section class="sec-sm" style="padding-top:60px;">
+  <div class="container">
+    <div class="sec-head rev">
+      <div class="sec-tag"><i class="bi bi-geo-alt"></i> Lokasi Kami</div>
+      <h2>Kunjungi <span class="grad-text">Kantor Kami</span></h2>
+      <p>Temukan kami di Jakarta Selatan. Kami melayani seluruh wilayah Jabodetabek dengan layanan panggilan.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10 rev">
+        <!-- Google Maps Embed -->
+        <div style="position:relative; width:100%; height:450px; border-radius:20px; overflow:hidden; box-shadow: 0 8px 32px rgba(10,46,92,.12); border: 1px solid rgba(10,46,92,.08);">
+          <!-- 
+            INSTRUKSI: Ganti iframe src di bawah dengan embed code Google Maps Anda
+            Cara mendapatkan embed code:
+            1. Buka Google Maps (maps.google.com)
+            2. Cari alamat kantor Anda
+            3. Klik "Share" / "Bagikan"
+            4. Pilih tab "Embed a map" / "Sematkan peta"
+            5. Copy HTML code dan paste di bawah (ganti yang ada)
+          -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.8254499786028!2d107.06534288336229!3d-6.284362972581346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698f00141c15a3%3A0xe755bc7851030386!2sPT.RAMA%20NET%20JAYA%20ABADI!5e0!3m2!1sen!2sid!4v1770172835753!5m2!1sen!2sid"
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Address Info Below Map -->
+        <div style="margin-top:24px; text-align:center;">
+          <div style="display:inline-flex; align-items:center; gap:10px; background:#fff; padding:16px 28px; border-radius:50px; box-shadow: 0 4px 16px rgba(10,46,92,.1);">
+            <i class="bi bi-geo-alt-fill" style="color:#0f5fcf; font-size:1.2rem;"></i>
+            <div style="text-align:left;">
+              <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:.88rem; color:#1e2a3a;">Jl. Raden Onte Kp. Cibuntu, Cibuntu, Kec. Cibitung, Kabupaten Bekasi</div>
+              <div style="font-size:.76rem; color:#8a9bb0;">Jawa Barat 17520</div>
+            </div>
+            <a href="https://maps.app.goo.gl/bvmSRvGEdsgVNUcW9" target="_blank" class="btn-out" style="font-size:.76rem; padding:6px 16px;">
+              <i class="bi bi-arrow-up-right"></i> Buka di Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT SECTION: Form + Info -->
 <section class="sec">
   <div class="container">
@@ -93,12 +144,24 @@
                 <label for="layanan">Layanan yang Diinginkan</label>
                 <select id="layanan" name="layanan" class="form-select">
                   <option value="" disabled selected>Pilih layanan...</option>
-                  <option value="service">Service AC</option>
-                  <option value="cuci">Cuci AC</option>
-                  <option value="bongkar-pasang">Bongkar Pasang AC</option>
-                  <option value="freon">Isi Freon</option>
-                  <option value="perbaikan">Perbaikan AC</option>
-                  <option value="konsultasi">Konsultasi Gratis</option>
+                  <optgroup label="🌬️ AC Services">
+                    <option value="service-ac">Service AC</option>
+                    <option value="cuci-ac">Cuci AC</option>
+                    <option value="bongkar-pasang">Bongkar Pasang AC</option>
+                    <option value="freon">Isi Freon</option>
+                    <option value="perbaikan-ac">Perbaikan AC</option>
+                  </optgroup>
+                  <optgroup label="📹 CCTV Services">
+                    <option value="cctv-rumah">Instalasi CCTV Rumah</option>
+                    <option value="cctv-bisnis">Instalasi CCTV Bisnis</option>
+                  </optgroup>
+                  <optgroup label="📡 WiFi Services">
+                    <option value="wifi-rumah">Pemasangan WiFi Rumah</option>
+                    <option value="wifi-kantor">Setup Jaringan Kantor</option>
+                  </optgroup>
+                  <optgroup label="💬 Lainnya">
+                    <option value="konsultasi">Konsultasi Gratis</option>
+                  </optgroup>
                 </select>
               </div>
 
@@ -160,7 +223,7 @@
             <div class="ci-ico" style="background:#fde8e8;"><i class="bi bi-geo-alt-fill" style="color:#dc3545;"></i></div>
             <div>
               <div class="ci-title">Alamat Bengkel</div>
-              <div class="ci-val">Jl. Sudirman No. 123, Jakarta Selatan<br>DKI Jakarta</div>
+              <div class="ci-val">Jl. Raden Onte Kp. Cibuntu, Cibuntu, Kec. Cibitung, Kabupaten Bekasi<br>Jawa Barat 17520</div>
             </div>
           </div>
         </div>
@@ -206,7 +269,7 @@
     <div class="sec-head rev">
       <div class="sec-tag"><i class="bi bi-question-circle"></i> FAQ</div>
       <h2>Pertanyaan yang <span class="grad-text">Sering Diajukan</span></h2>
-      <p>Temukan jawaban untuk pertanyaan umum seputar layanan service AC kami.</p>
+      <p>Temukan jawaban untuk pertanyaan umum seputar layanan kami.</p>
     </div>
 
     <div class="row justify-content-center">
@@ -246,12 +309,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                  Seberapa sering AC perlu diservis?
+                  Apakah layanan panggilan tersedia di luar Bekasi?
                 </button>
               </h2>
               <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Kami merekomendasikan service AC dilakukan setiap 3 hingga 6 bulan sekali untuk menjaga performa optimal. AC yang jarang diservis akan mengonsumsi listrik lebih banyak dan memiliki risiko kerusakan yang lebih tinggi.
+                  Ya, kami melayani seluruh wilayah Jabodetabek termasuk Jakarta, Tangerang, Bogor, dan Depok. Untuk area yang jauh dari pusat Jakarta, biaya perjalanan tambahan sebesar Rp 50.000 hingga Rp 150.000 akan berlaku.
                 </div>
               </div>
             </div>
@@ -260,12 +323,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                  Apakah layanan panggilan tersedia di luar Jakarta?
+                  Berapa lama garansi untuk instalasi CCTV?
                 </button>
               </h2>
               <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Ya, kami melayani seluruh wilayah Jabodetabek termasuk Bekasi, Tangerang, Bogor, dan Depok. Untuk area yang jauh dari pusat Jakarta, biaya perjalanan tambahan sebesar Rp 50.000 hingga Rp 150.000 akan berlaku.
+                  Instalasi CCTV kami dilengkapi dengan garansi 1 tahun untuk instalasi dan perangkat keras. Garansi mencakup perbaikan gratis jika terdapat masalah teknis yang berkaitan dengan pemasangan.
                 </div>
               </div>
             </div>
@@ -274,12 +337,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                  Berapa lama garansi layanan yang diberikan?
+                  Apakah saya bisa monitoring CCTV dari HP?
                 </button>
               </h2>
               <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Setiap layanan dilengkapi dengan garansi: Service AC dan Isi Freon mendapat garansi 3 bulan, Cuci AC mendapat garansi 2 bulan, dan Bongkar Pasang AC mendapat garansi instalasi 6 bulan. Garansi mencakup pengembalian teknisi gratis jika terdapat masalah yang berkaitan.
+                  Ya, semua paket CCTV kami sudah termasuk konfigurasi akses online sehingga Anda dapat memonitor CCTV dari smartphone Android/iOS di mana pun Anda berada selama terhubung ke internet.
                 </div>
               </div>
             </div>
@@ -288,12 +351,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                  Apakah kalian menggunakan spare part original?
+                  Berapa kecepatan WiFi yang bisa didapat?
                 </button>
               </h2>
               <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Ya, kami selalu menggunakan spare part dan komponen original yang sesuai dengan spesifikasi merek dan model AC Anda. Hal ini dilakukan untuk memastikan performa terbaik dan menjaga garansi pabrik unit AC Anda.
+                  Kecepatan WiFi tergantung pada paket internet provider Anda. Kami akan mengoptimalkan konfigurasi router dan penempatan access point untuk memastikan Anda mendapatkan kecepatan maksimal sesuai paket yang Anda berlangganan.
                 </div>
               </div>
             </div>
